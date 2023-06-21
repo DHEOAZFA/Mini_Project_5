@@ -20,15 +20,12 @@ public class TrxTransaksiAkun {
     @Column(name = "id_transaksi")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idTransaksi;
-    
     @Column(name = "id_akun", updatable = false, insertable = false)
     private Integer idAkun;
     @JoinColumn(name = "Id_akun" )
     @ManyToOne(fetch = FetchType.LAZY)
     @OnDelete(action = OnDeleteAction.NO_ACTION)
     private MstAkun akun;
-    
-    
     @Column(name = "id_target_akun")
     private Integer idTargetAkun;
     @Column(name = "tipe_transaksi")

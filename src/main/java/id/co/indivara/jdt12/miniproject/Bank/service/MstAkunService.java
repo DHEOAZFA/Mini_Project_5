@@ -16,12 +16,8 @@ public List<MstAkun> getAllAkun(){return (List<MstAkun>) mstAkunRepository.findA
 
 public String saveAkun(MstAkun akun) {
     MstAkun cst = mstAkunRepository.save(akun);
-    if (Objects.nonNull(cst) && cst.getIdAkun() != null) {
-        return "akun " + cst.getIdAkun() + " Berhasil Dibuat";
-    } else {
-        return "Gagal Insert Customer";
+    if (Objects.nonNull(cst) && cst.getIdAkun() != null)return "akun " + cst.getIdAkun() + " Berhasil Dibuat";
+    return "Gagal Insert Customer";
     }
 }
 
-
-}

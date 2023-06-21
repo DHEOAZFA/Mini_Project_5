@@ -19,11 +19,9 @@ public class TrxSaldoRekening {
     private Integer id;
     @Column(name = "id_akun",updatable = false, insertable = false)
     private Integer idAkun;
-    
     @JoinColumn(name = "Id_akun" ) //buat join kolom foreign key
     @OneToOne(fetch = FetchType.LAZY)
     private MstAkun akun;
-
     @Column(name = "saldo")
     private Integer Saldo;
 }

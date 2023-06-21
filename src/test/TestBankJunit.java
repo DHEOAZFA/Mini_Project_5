@@ -7,7 +7,7 @@
 //    @Test
 //    public void UjiBikinAccount(){
 //        Object assertEquals;
-//        assertEquals("111", accounttest.getCustomerId(111,11,"pribadi",1000));
+//        assertEquals());
 //        
 //        
 //    }

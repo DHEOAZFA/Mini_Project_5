@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.List;
-
 @RestController
 public class MstAkunController{
 @Autowired
@@ -17,8 +15,9 @@ public class MstAkunController{
     public List<MstAkun> getAllakun(){
         return mstAkunService.getAllAkun();
     }
-
+    
     @PostMapping("/simpanakun")
     public String saveAkun(@RequestBody MstAkun akun){ return mstAkunService.saveAkun(akun);}
 
+    
 }
