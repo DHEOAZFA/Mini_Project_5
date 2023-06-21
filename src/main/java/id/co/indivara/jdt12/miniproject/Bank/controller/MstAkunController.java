@@ -12,12 +12,9 @@ public class MstAkunController{
 @Autowired
     MstAkunService mstAkunService;
     @GetMapping("/akun")
-    public List<MstAkun> getAllakun(){
-        return mstAkunService.getAllAkun();
-    }
-    
+    public List<MstAkun> getAllakun(){ return mstAkunService.getAllAkun();}
     @PostMapping("/simpanakun")
-    public String saveAkun(@RequestBody MstAkun akun){ return mstAkunService.saveAkun(akun);}
-
-    
+    public ResponseEntity<?> saveAkun(@RequestBody SimpanAkun simpanAkun){
+        return ResponseEntity.ok(mstAkunService.saveAkun(simpanAkun));
+    }
 }

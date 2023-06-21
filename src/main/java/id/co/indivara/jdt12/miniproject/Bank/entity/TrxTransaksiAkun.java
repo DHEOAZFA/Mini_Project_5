@@ -15,7 +15,9 @@ import java.time.Instant;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class TrxTransaksiAkun {
+public class
+    
+TrxTransaksiAkun {
     @Id
     @Column(name = "id_transaksi")
     @GeneratedValue(strategy = GenerationType.AUTO)

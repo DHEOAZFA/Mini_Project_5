@@ -5,4 +5,5 @@ import javax.transaction.Transactional;
 
 @Transactional
 public interface TrxTransaksiAkunRepository extends JpaRepository<TrxTransaksiAkun,Integer> {
+    
 }

@@ -12,13 +12,10 @@ import java.util.List;
 public class MstPelangganController {
     @Autowired
     MstPelangganService mstPelangganService;
-
     @GetMapping("/customer")
     public List<MstPelanggan> getAllCustomer(){
         return mstPelangganService.getAllCustomer();
     }
-    
     @PostMapping("/simpancustomer")
     public MstPelanggan savePelanggan(@RequestBody MstPelanggan pelanggan){ return mstPelangganService.savePelanggan(pelanggan);}
-    
 }

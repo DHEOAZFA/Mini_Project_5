@@ -27,5 +27,5 @@ public class MstAkun {
     @Column (name = "no_akun")
     private Integer noAkun;
     @Column (name = "pin")
-    private Integer pin;
+    private String pin;
 }
